@@ -3,24 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/Users/KAIZER/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
-        <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.4.0_14054d565ebe0bf0be6798e08edd93377286939c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/KAIZER/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_6a1af1a05f3c60200ada40c441a4ba8cdaaa7263/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
         jumboMode="true"
         optimize="true"
@@ -57,6 +39,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/KAIZER/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.4.0_14054d565ebe0bf0be6798e08edd93377286939c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KAIZER/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_6a1af1a05f3c60200ada40c441a4ba8cdaaa7263/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -81,6 +81,15 @@
         revision="23.0.3"
         sha1="38da306aafee11459cd935a01d2c92a98dc670a4">
         <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-1.0.18_b53b80c7316d028018bdfc780bfaf3d6fcf58aa2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.github.medyo/fancybuttons/1.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="511320053169bdc5d8445a414db09e7cdd10d920">
+        <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.medyo-fancybuttons-1.5_ed6867bf41d1d1c2a38cc8ad83a13e69e44cefeb/classes.dex" />
     </item>
     <item
         is-multidex="true"

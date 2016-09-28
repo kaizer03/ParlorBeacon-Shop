@@ -37,9 +37,9 @@ public class LoginShop extends AppCompatActivity {
     String login_url = "http://parlorbeacon.com/androidapp/shopkeeper/login.php";
     String login_name_url = "http://parlorbeacon.com/androidapp/shopkeeper/login_name.php";
 
-    @Bind(R.id.login_shop_email)
+    //@Bind(R.id.login_shop_email)
     EditText emailtext;
-    @Bind(R.id.login_shop_password)
+    //@Bind(R.id.login_shop_password)
     EditText passtext;
 
     @Override
@@ -58,7 +58,7 @@ public class LoginShop extends AppCompatActivity {
 
     }
 
-    @OnClick(R.id.login_shop_button)
+    //@OnClick(R.id.login_shop_button)
     public void onClick1(View view)
     {
         String email = emailtext.getText().toString();
@@ -126,13 +126,13 @@ public class LoginShop extends AppCompatActivity {
         return networkInfo != null && networkInfo.isConnected();
     }
 
-    @OnClick(R.id.login_shop_signup)
+    //@OnClick(R.id.login_shop_signup)
     public void onClick2(View view)
     {
         startActivity(new Intent(LoginShop.this,SignUpShop.class));
     }
 
-    @OnClick(R.id.login_shop_forgot)
+    //@OnClick(R.id.login_shop_forgot)
     public void onClick3(View view)
     {
         startActivity(new Intent(LoginShop.this,Forgot.class));
