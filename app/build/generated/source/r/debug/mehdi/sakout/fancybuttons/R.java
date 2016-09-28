@@ -32,20 +32,20 @@ public final class R {
 		public static final int fb_textSize = 0x7f010051;
 	}
 	public static final class id {
-		public static final int bottom = 0x7f0c001c;
-		public static final int center = 0x7f0c001d;
-		public static final int center_horizontal = 0x7f0c001e;
-		public static final int center_vertical = 0x7f0c001f;
-		public static final int clip_horizontal = 0x7f0c002b;
-		public static final int clip_vertical = 0x7f0c002c;
-		public static final int end = 0x7f0c0020;
-		public static final int fill = 0x7f0c002d;
-		public static final int fill_horizontal = 0x7f0c002e;
-		public static final int fill_vertical = 0x7f0c0021;
-		public static final int left = 0x7f0c0022;
-		public static final int right = 0x7f0c0023;
-		public static final int start = 0x7f0c0024;
-		public static final int top = 0x7f0c0025;
+		public static final int bottom = 0x7f0c0021;
+		public static final int center = 0x7f0c0022;
+		public static final int center_horizontal = 0x7f0c0023;
+		public static final int center_vertical = 0x7f0c0024;
+		public static final int clip_horizontal = 0x7f0c0030;
+		public static final int clip_vertical = 0x7f0c0031;
+		public static final int end = 0x7f0c0025;
+		public static final int fill = 0x7f0c0032;
+		public static final int fill_horizontal = 0x7f0c0033;
+		public static final int fill_vertical = 0x7f0c0026;
+		public static final int left = 0x7f0c0027;
+		public static final int right = 0x7f0c0028;
+		public static final int start = 0x7f0c0029;
+		public static final int top = 0x7f0c002a;
 	}
 	public static final class styleable {
 		public static final int[] FancyButtonsAttrs = { 0x7f01004b, 0x7f01004c, 0x7f01004d, 0x7f01004e, 0x7f01004f, 0x7f010050, 0x7f010051, 0x7f010052, 0x7f010053, 0x7f010054, 0x7f010055, 0x7f010056, 0x7f010057, 0x7f010058, 0x7f010059, 0x7f01005a, 0x7f01005b, 0x7f01005c, 0x7f01005d, 0x7f01005e, 0x7f01005f, 0x7f010060 };

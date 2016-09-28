@@ -80,6 +80,10 @@
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_action.xml"
     },
     {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/achievement_layout.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/ParlorBeacon-Shop-master/Achievement/unspecified/res/layout/achievement_layout.xml"
+    },
+    {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/activity_my_shop.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/layout/activity_my_shop.xml"
     },
