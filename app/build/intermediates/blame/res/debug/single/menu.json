@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/activity_booking__shop_drawer.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/activity_booking__shop_drawer.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/activity_contact_us_drawer.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/activity_contact_us_drawer.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/contact_us.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/contact_us.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/activity_detail__shop_drawer.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/activity_detail__shop_drawer.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/activity_my_shop_drawer.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/activity_my_shop_drawer.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/my_shop.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/my_shop.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/activity_employee__shop_drawer.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/activity_employee__shop_drawer.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/ms_shop.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/ms_shop.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/employee__shop.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/employee__shop.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/activity_ms_shop_drawer.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/activity_ms_shop_drawer.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/activity_about__us_drawer.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/activity_about__us_drawer.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/detail__shop.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/detail__shop.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/about__us.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/about__us.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/booking__shop.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/booking__shop.xml"
+    }
+]

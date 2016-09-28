@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.springboardsolution.parlorbeacon"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.MainActivity"
+            android:label="Parlor Beacon" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.LoginShop"
+            android:label="Login" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.SignUpShop"
+            android:label="Sign Up" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.Forgot"
+            android:label="Reset Password" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.Forgot_Text"
+            android:label="Email Sent" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.UpcomingFeatures"
+            android:label="Upcoming Features" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.MS_Shop"
+            android:label="@string/title_activity_ms__shop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.Detail_Shop"
+            android:label="@string/title_activity_detail__shop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.Edit_Detail_Shop"
+            android:label="Edit Details" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.Employee_Shop"
+            android:label="@string/title_activity_employee__shop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.Booking_Shop"
+            android:label="@string/title_activity_booking__shop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.Add_Employee"
+            android:label="Add Employee" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.MyShop"
+            android:label="@string/title_activity_my_shop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.springboardtechsolutions.parlorbeaconshop.Pictures_See" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.About_Us"
+            android:label="@string/title_activity_about__us"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.springboardtechsolutions.parlorbeaconshop.ContactUs"
+            android:label="@string/title_activity_contact_us"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.springboardtechsolutions.parlorbeaconshop.Reset_Password" />
+        <activity android:name="com.springboardtechsolutions.parlorbeaconshop.RegistrationVerification" />
+    </application>
+
+</manifest>

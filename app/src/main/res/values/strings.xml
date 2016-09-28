@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Parlor Beacon Shop</string>
+
+    <string name="forgot_email_text">Enter email :</string>
+    <string name="forgot_reset_password_button">Reset Password</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="splashscreenimage">SplashScreen Image</string>
+    <string name="pick_image_intent_text">Image</string>
+
+    <string name="email_login_shop">Enter your email :</string>
+    <string name="password_login_shop">Enter password :</string>
+    <string name="button_login_shop">Login</string>
+    <string name="forgot_login_shop"><u>Forgotten password !</u></string>
+    <string name="signup_login_shop"><u>Sign Up</u></string>
+    <string name="text_login_shop">Do not have an account ?</string>
+    <string name="title_activity_ms__shop">Shopkeeper</string>
+    <string name="schedule_ms_shop">Today\'s Schedule</string>
+    <string name="title_activity_detail__shop">Shop Details</string>
+    <string name="title_activity_employee__shop">Employee Details</string>
+
+    <string name="AboutCompany">SpringBoard Tech Solutions focuses on advising organizations on how to best use information technology in achieving their business objectives. In addition to providing advice, SpringBoard prides itself in assisting clients with creating, defining, and marketing their products through app or web design. Our Goal is to provide the most knowledgeable and innovative teams all while delivering the highest impact partnership to ensure our clients’ success.</string>
+    <string name="title_activity_about_us">SpringBoard Tech Solutions</string>
+    <string name="title_activity_contact_us">Contact Us</string>
+    <string name="title_activity_my_shop">My Shop</string>
+    <string name="title_activity_booking__shop">Bookings</string>
+    <string name="title_activity_about__us">About Us</string>
+
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Detail_Shop"
+    tools:showIn="@layout/app_bar_detail__shop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/npi"
+                android:id="@+id/profile_shop"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:border_color="#000000"
+                android:layout_marginTop="10dp"
+                app:border_width="1dp"
+                android:onClick="onClick4"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/nfi"
+                android:id="@+id/front_shop"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                app:border_color="#000000"
+                android:layout_marginTop="10dp"
+                app:border_width="1dp"
+                android:onClick="onClick5"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/edit_shopdetail_button"
+                android:text="Edit"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Shopkeeper Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_shop_shopkeepername"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Shop Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/detail_shop_shopkeepername"
+            android:id="@+id/detail_shop_shopname"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/detail_shop_shopname"
+            android:id="@+id/detail_shop_email"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Phone No."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/detail_shop_email"
+            android:id="@+id/detail_shop_shopphone"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/detail_shop_shopphone"
+            android:id="@+id/detail_shop_shopaddress"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/detail_shop_shopaddress"
+            android:id="@+id/detail_shop_shopcity"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/detail_shop_shopcity"
+            android:id="@+id/detail_shop_shopzip"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Shop Open Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/detail_shop_shopzip"
+            android:id="@+id/detail_shop_shopopen"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Shop Close Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/detail_shop_shopopen"
+            android:id="@+id/detail_shop_shopclose"
+            android:singleLine="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

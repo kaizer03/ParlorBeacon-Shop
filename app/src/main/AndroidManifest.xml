@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.springboardtechsolutions.parlorbeaconshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Parlor Beacon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginShop"
+            android:label="Login" />
+        <activity
+            android:name=".SignUpShop"
+            android:label="Sign Up" />
+        <activity
+            android:name=".Forgot"
+            android:label="Reset Password" />
+        <activity
+            android:name=".Forgot_Text"
+            android:label="Email Sent" />
+        <activity
+            android:name=".UpcomingFeatures"
+            android:label="Upcoming Features" />
+        <activity
+            android:name=".MS_Shop"
+            android:label="@string/title_activity_ms__shop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Detail_Shop"
+            android:label="@string/title_activity_detail__shop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Edit_Detail_Shop"
+            android:label="Edit Details" />
+        <activity
+            android:name=".Employee_Shop"
+            android:label="@string/title_activity_employee__shop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Booking_Shop"
+            android:label="@string/title_activity_booking__shop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Add_Employee"
+            android:label="Add Employee" />
+        <activity
+            android:name=".MyShop"
+            android:label="@string/title_activity_my_shop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Pictures_See" />
+        <activity
+            android:name=".About_Us"
+            android:label="@string/title_activity_about__us"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contact_us"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Reset_Password" />
+        <activity android:name=".RegistrationVerification"></activity>
+    </application>
+
+</manifest>

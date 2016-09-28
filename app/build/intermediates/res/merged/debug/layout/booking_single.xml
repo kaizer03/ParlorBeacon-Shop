@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/BookCustName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/BookCustEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BookCustName"
+            android:text="Email"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/BookCustService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BookCustEmail"
+            android:text="Service"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/BookCustServTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BookCustService"
+            android:text="Time"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/BookCustServStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/BookCustServDate"
+            android:text="Status"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/BookCustServDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BookCustServTime"
+            android:text="Date"
+            android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/BookingCancelButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BookCustServDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:text="Cancel Booking"
+            android:background="#d98cb3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ButtonStatus1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textviewques1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Do u want to accept the booking?"
+            android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/BookingAccept1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/textviewques1"
+            android:background="#9966ff"/>
+
+        <Button
+            android:id="@+id/BookingReject1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="No"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/textviewques1"
+            android:background="#ff8080"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
