@@ -1,10 +1,15 @@
 package com.springboardtechsolutions.parlorbeaconshop;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -40,6 +45,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import me.arulnadhan.AchievementUnlockedLib.AchievementUnlocked;
+
 public class MS_Shop extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     RequestQueue requestQueue;
@@ -53,6 +60,8 @@ public class MS_Shop extends AppCompatActivity implements NavigationView.OnNavig
         setContentView(R.layout.activity_ms_shop);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        LoginSuccessToast("Mayank","Hi");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -260,6 +269,78 @@ public class MS_Shop extends AppCompatActivity implements NavigationView.OnNavig
             e.printStackTrace();
         }
         return out;
+    }
+
+    public void LoginSuccessToast(String name, final String pic)
+    {
+        AchievementUnlocked gpg = new AchievementUnlocked(this).setTitle("Welcome").setTitleColor(0x70444444).setSubTitle(name).setSubtitleColor(0xff444444).setIcon(getDrawableFromRes(R.drawable.gpg)).setDuration(1500).isLarge(false).build();
+        final View iconView = gpg.getIconView();
+        final Drawable iconViewDefaultBackground = gpg.getIconView().getBackground();
+        final ObjectAnimator out = ObjectAnimator.ofFloat(iconView, "alpha", 1f, 0f);
+        final ObjectAnimator in = ObjectAnimator.ofFloat(iconView, "alpha", 0f, 1f);
+
+        gpg.setAchievementListener(new AchievementUnlocked.achievementListener() {
+            @Override
+            public void onAchievementBeingCreated(AchievementUnlocked achievement, boolean created) {
+
+            }
+
+            @Override
+            public void onAchievementExpanding(AchievementUnlocked achievement, boolean expanded) {
+                if (expanded) {
+
+                    out.addListener(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            super.onAnimationEnd(animation);
+                            if (Build.VERSION.SDK_INT >= 16) {
+                                if(pic!=null)
+                                    iconView.setBackground(getDrawableFromRes(R.drawable.profile));
+                            } else {
+                                if(pic!=null)
+                                    iconView.setBackgroundDrawable(getDrawableFromRes(R.drawable.profile));
+                            }
+                            in.start();
+                        }
+                    });
+                    out.start();
+
+                }
+            }
+
+            @Override
+            public void onAchievementShrinking(AchievementUnlocked achievement, boolean shrunken) {
+
+                if (!shrunken) {
+
+                    out.addListener(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            super.onAnimationEnd(animation);
+                            if (Build.VERSION.SDK_INT >= 16) {
+                                iconView.setBackground(iconViewDefaultBackground);
+                            } else
+                                iconView.setBackgroundDrawable(iconViewDefaultBackground);
+
+                            in.start();
+                        }
+                    });
+                    out.start();
+                }
+
+            }
+
+            @Override
+            public void onAchievementBeingDestroyed(AchievementUnlocked achievement, boolean destroyed) {
+
+            }
+        });
+        gpg.show();
+    }
+
+    private Drawable getDrawableFromRes(int ResID) {
+        if (Build.VERSION.SDK_INT >= 21) getDrawable(ResID);
+        return getResources().getDrawable((ResID));
     }
 
 }

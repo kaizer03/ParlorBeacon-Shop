@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class RegistrationVerification$$ViewBinder<T extends com.springboardtechsolutions.parlorbeaconshop.RegistrationVerification> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492999, "field 'Register_Pin'");
-    target.Register_Pin = finder.castView(view, 2131492999, "field 'Register_Pin'");
+    view = finder.findRequiredView(source, 2131493004, "field 'Register_Pin'");
+    target.Register_Pin = finder.castView(view, 2131493004, "field 'Register_Pin'");
   }
 
   @Override public void unbind(T target) {

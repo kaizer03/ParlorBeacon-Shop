@@ -8,13 +8,13 @@ import butterknife.ButterKnife.ViewBinder;
 public class Add_Employee$$ViewBinder<T extends com.springboardtechsolutions.parlorbeaconshop.Add_Employee> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492971, "field 'nametext'");
-    target.nametext = finder.castView(view, 2131492971, "field 'nametext'");
-    view = finder.findRequiredView(source, 2131492972, "field 'emailtext'");
-    target.emailtext = finder.castView(view, 2131492972, "field 'emailtext'");
-    view = finder.findRequiredView(source, 2131492973, "field 'designationtext'");
-    target.designationtext = finder.castView(view, 2131492973, "field 'designationtext'");
-    view = finder.findRequiredView(source, 2131492974, "method 'onClick'");
+    view = finder.findRequiredView(source, 2131492976, "field 'nametext'");
+    target.nametext = finder.castView(view, 2131492976, "field 'nametext'");
+    view = finder.findRequiredView(source, 2131492977, "field 'emailtext'");
+    target.emailtext = finder.castView(view, 2131492977, "field 'emailtext'");
+    view = finder.findRequiredView(source, 2131492978, "field 'designationtext'");
+    target.designationtext = finder.castView(view, 2131492978, "field 'designationtext'");
+    view = finder.findRequiredView(source, 2131492979, "method 'onClick'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

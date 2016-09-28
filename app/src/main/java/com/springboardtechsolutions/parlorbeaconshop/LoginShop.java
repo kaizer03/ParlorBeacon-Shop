@@ -1,11 +1,20 @@
 package com.springboardtechsolutions.parlorbeaconshop;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
@@ -29,6 +38,7 @@ import java.util.Map;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import me.arulnadhan.AchievementUnlockedLib.AchievementUnlocked;
 
 
 public class LoginShop extends AppCompatActivity {
@@ -47,6 +57,23 @@ public class LoginShop extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_shop);
 
+        if (Build.VERSION.SDK_INT >= 23) {
+
+            if (!Settings.canDrawOverlays(getApplicationContext()))
+                new AlertDialog.Builder(this)
+
+                        .setMessage("Starting from Android 6, " + getResources().getString(R.string.app_name) + " needs permission to display notifications. Click enable to proceed")
+                        .setPositiveButton("Enable", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                androidM();
+                            }
+                        })
+
+                        .show();
+
+        }
+
+
         requestQueue = Volley.newRequestQueue(getApplicationContext());
         ButterKnife.bind(this);
 
@@ -57,6 +84,14 @@ public class LoginShop extends AppCompatActivity {
         }
 
     }
+
+    public void androidM() {
+        Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
+                Uri.parse("package:" + getPackageName()));
+        startActivityForResult(intent, 123);
+
+    }
+
 
     @OnClick(R.id.login_shop_button)
     public void onClick1(View view)
@@ -88,7 +123,6 @@ public class LoginShop extends AppCompatActivity {
                             savenameShop();
                             startActivity(new Intent(LoginShop.this,MS_Shop.class));
                             finish();
-                            Toast.makeText(LoginShop.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
                         } else if (response.equalsIgnoreCase(String.valueOf(1))) {
                             Toast.makeText(LoginShop.this, "Your Request has not been accepted please wait.", Toast.LENGTH_SHORT).show();
                         } else if (response.equalsIgnoreCase(String.valueOf(2))) {
