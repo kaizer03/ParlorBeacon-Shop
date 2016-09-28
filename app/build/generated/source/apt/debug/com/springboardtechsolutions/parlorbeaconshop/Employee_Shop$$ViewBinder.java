@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class Employee_Shop$$ViewBinder<T extends com.springboardtechsolutions.parlorbeaconshop.Employee_Shop> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131493056, "field 'employeelist'");
-    target.employeelist = finder.castView(view, 2131493056, "field 'employeelist'");
+    view = finder.findRequiredView(source, 2131493054, "field 'employeelist'");
+    target.employeelist = finder.castView(view, 2131493054, "field 'employeelist'");
   }
 
   @Override public void unbind(T target) {

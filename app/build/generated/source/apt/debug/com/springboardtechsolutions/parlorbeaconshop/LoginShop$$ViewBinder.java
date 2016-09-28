@@ -8,11 +8,11 @@ import butterknife.ButterKnife.ViewBinder;
 public class LoginShop$$ViewBinder<T extends com.springboardtechsolutions.parlorbeaconshop.LoginShop> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492989, "field 'emailtext'");
-    target.emailtext = finder.castView(view, 2131492989, "field 'emailtext'");
-    view = finder.findRequiredView(source, 2131492990, "field 'passtext'");
-    target.passtext = finder.castView(view, 2131492990, "field 'passtext'");
-    view = finder.findRequiredView(source, 2131492991, "method 'onClick1'");
+    view = finder.findRequiredView(source, 2131492990, "field 'emailtext'");
+    target.emailtext = finder.castView(view, 2131492990, "field 'emailtext'");
+    view = finder.findRequiredView(source, 2131492991, "field 'passtext'");
+    target.passtext = finder.castView(view, 2131492991, "field 'passtext'");
+    view = finder.findRequiredView(source, 2131492992, "method 'onClick1'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -21,7 +21,7 @@ public class LoginShop$$ViewBinder<T extends com.springboardtechsolutions.parlor
           target.onClick1(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131492992, "method 'onClick2'");
+    view = finder.findRequiredView(source, 2131492994, "method 'onClick2'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

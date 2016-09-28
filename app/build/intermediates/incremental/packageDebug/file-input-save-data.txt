@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Sep 29 01:13:52 IST 2016
+#Thu Sep 29 01:26:46 IST 2016
 210.set=ANDROID_RESOURCE
 282.file=/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/resources-debug.ap_/res/drawable/nfi.png
 14.set=DEX

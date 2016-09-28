@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Sep 29 01:13:52 IST 2016
+#Thu Sep 29 01:26:44 IST 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_expanded_menu_layout.xml

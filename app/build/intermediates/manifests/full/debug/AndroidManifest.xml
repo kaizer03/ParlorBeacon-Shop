@@ -31,7 +31,8 @@
         </activity>
         <activity
             android:name="com.springboardtechsolutions.parlorbeaconshop.LoginShop"
-            android:label="Login" />
+            android:label="Login"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.springboardtechsolutions.parlorbeaconshop.SignUpShop"
             android:label="Sign Up" />

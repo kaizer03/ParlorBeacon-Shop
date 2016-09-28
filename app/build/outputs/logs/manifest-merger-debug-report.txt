@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:2:1-80:12
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:2:1-81:12
 	package
 		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:3:5-60
 		INJECTED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/Android
 	android:name
 		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:8:29-71
 application
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:11:5-78:19
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:11:5-79:19
 MERGED from [com.android.support:design:23.1.1] /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
@@ -59,115 +59,117 @@ ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/Android
 	android:name
 		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:23:27-74
 activity#com.springboardtechsolutions.parlorbeaconshop.LoginShop
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:26:9-28:37
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:26:9-29:58
 	android:label
 		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:28:13-34
+	android:theme
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:29:13-56
 	android:name
 		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:27:13-38
 activity#com.springboardtechsolutions.parlorbeaconshop.SignUpShop
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:29:9-31:39
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:30:9-32:39
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:31:13-36
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:32:13-36
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:30:13-39
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:31:13-39
 activity#com.springboardtechsolutions.parlorbeaconshop.Forgot
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:32:9-34:46
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:33:9-35:46
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:34:13-43
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:33:13-35
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:34:13-35
 activity#com.springboardtechsolutions.parlorbeaconshop.Forgot_Text
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:35:9-37:42
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:36:9-38:42
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:37:13-39
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:38:13-39
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:36:13-40
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:37:13-40
 activity#com.springboardtechsolutions.parlorbeaconshop.UpcomingFeatures
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:38:9-40:49
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:39:9-41:49
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:40:13-46
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:41:13-46
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:39:13-45
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:40:13-45
 activity#com.springboardtechsolutions.parlorbeaconshop.MS_Shop
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:41:9-44:59
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:42:9-45:59
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:43:13-60
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:44:13-60
 	android:theme
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:44:13-56
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:45:13-56
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:42:13-36
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:43:13-36
 activity#com.springboardtechsolutions.parlorbeaconshop.Detail_Shop
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:45:9-48:59
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:46:9-49:59
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:47:13-64
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:48:13-64
 	android:theme
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:48:13-56
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:49:13-56
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:46:13-40
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:47:13-40
 activity#com.springboardtechsolutions.parlorbeaconshop.Edit_Detail_Shop
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:49:9-51:44
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:50:9-52:44
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:51:13-41
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:52:13-41
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:50:13-45
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:51:13-45
 activity#com.springboardtechsolutions.parlorbeaconshop.Employee_Shop
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:52:9-55:59
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:53:9-56:59
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:54:13-66
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:55:13-66
 	android:theme
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:55:13-56
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:56:13-56
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:53:13-42
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:54:13-42
 activity#com.springboardtechsolutions.parlorbeaconshop.Booking_Shop
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:56:9-59:59
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:57:9-60:59
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:58:13-65
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:59:13-65
 	android:theme
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:59:13-56
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:60:13-56
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:57:13-41
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:58:13-41
 activity#com.springboardtechsolutions.parlorbeaconshop.Add_Employee
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:60:9-62:44
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:61:9-63:44
 	android:label
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:63:13-41
+	android:name
 		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:62:13-41
-	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:61:13-41
 activity#com.springboardtechsolutions.parlorbeaconshop.MyShop
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:63:9-66:59
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:64:9-67:59
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:65:13-59
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:66:13-59
 	android:theme
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:66:13-56
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:67:13-56
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:64:13-35
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:65:13-35
 activity#com.springboardtechsolutions.parlorbeaconshop.Pictures_See
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:67:9-50
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:68:9-50
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:67:19-47
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:68:19-47
 activity#com.springboardtechsolutions.parlorbeaconshop.About_Us
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:68:9-71:59
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:69:9-72:59
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:70:13-61
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:71:13-61
 	android:theme
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:71:13-56
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:72:13-56
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:69:13-37
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:70:13-37
 activity#com.springboardtechsolutions.parlorbeaconshop.ContactUs
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:72:9-75:59
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:73:9-76:59
 	android:label
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:74:13-62
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:75:13-62
 	android:theme
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:75:13-56
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:76:13-56
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:73:13-38
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:74:13-38
 activity#com.springboardtechsolutions.parlorbeaconshop.Reset_Password
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:76:9-52
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:77:9-52
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:76:19-49
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:77:19-49
 activity#com.springboardtechsolutions.parlorbeaconshop.RegistrationVerification
-ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:77:9-71
+ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:78:9-71
 	android:name
-		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:77:19-59
+		ADDED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml:78:19-59
 uses-sdk
 INJECTED from /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:23.1.1] /Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:20:5-43
