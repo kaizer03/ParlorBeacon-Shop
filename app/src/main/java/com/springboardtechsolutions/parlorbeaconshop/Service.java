@@ -61,6 +61,7 @@ public class Service extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Service.this,AddServices.class));
+                finish();
             }
         });
 

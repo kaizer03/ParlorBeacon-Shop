@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -33,6 +34,8 @@ public class SignUpShop extends AppCompatActivity {
 
     EditText shopkeepernametext,shopnametext,emailtext,passtext,shopphonetext,shopaddrtext,shopcitytext,shopziptext,shopopentext,shopclosetext;
 
+    CheckBox tc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +59,7 @@ public class SignUpShop extends AppCompatActivity {
         shopziptext = (EditText)findViewById(R.id.signup_shop_shopzip);
         shopopentext = (EditText)findViewById(R.id.signup_shop_shopopen);
         shopclosetext = (EditText)findViewById(R.id.signup_shop_shopclose);
+        tc = (CheckBox)findViewById(R.id.AcceptTC);
     }
 
     public void onClick1(View view)
@@ -122,6 +126,10 @@ public class SignUpShop extends AppCompatActivity {
         if(shopkeepername.equals("") || shopname.equals("") || shopemail.equals("") || shoppass.equals("") || shopphone.equals("") || shopaddr.equals("") || shopcity.equals("") || shopzip.equals("") || shopopen.equals("") || shopclose.equals(""))
         {
             Toast.makeText(SignUpShop.this,"Please enter all the Details", Toast.LENGTH_SHORT).show();
+        }
+        else if(!tc.isChecked())
+        {
+            Toast.makeText(SignUpShop.this,"Please agree with Terms and Conditions", Toast.LENGTH_SHORT).show();
         }
         else
         {
