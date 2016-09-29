@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="a560d148956f4e475192e1f963a47790295029eb">
+        sha1="16866f17c43421d759b74c0438e3268dd5862bf6">
         <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7f0a754c8bb85fd181fb70e06e1df5ed2ff7d147/classes.dex" />
     </item>
     <item
@@ -84,12 +84,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.github.medyo/fancybuttons/1.5/jars/classes.jar"
+        jar="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="511320053169bdc5d8445a414db09e7cdd10d920">
-        <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.medyo-fancybuttons-1.5_ed6867bf41d1d1c2a38cc8ad83a13e69e44cefeb/classes.dex" />
+        sha1="553db6b05529ba01730771f8044e4078b16b4e1a">
+        <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f140f3d874bdeab56350a81c6b4bba06f81f2fdc/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -102,12 +102,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.github.medyo/fancybuttons/1.5/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="73294189d5ff9a944c69eb3f92610b162177e9ab">
-        <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f140f3d874bdeab56350a81c6b4bba06f81f2fdc/classes.dex" />
+        sha1="511320053169bdc5d8445a414db09e7cdd10d920">
+        <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.medyo-fancybuttons-1.5_ed6867bf41d1d1c2a38cc8ad83a13e69e44cefeb/classes.dex" />
     </item>
     <item
         is-multidex="true"

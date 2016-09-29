@@ -1,6 +1,10 @@
 package com.springboardtechsolutions.parlorbeaconshop;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,12 +17,36 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Service extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    RequestQueue requestQueue;
+    ListView listView;
+    String serviceshow_url = "http://parlorbeacon.com/androidapp/shopkeeper/ShowService.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +55,11 @@ public class Service extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        Button fab = (Button)findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(Service.this,AddServices.class));
             }
         });
 
@@ -44,6 +71,102 @@ public class Service extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        listView = (ListView)findViewById(R.id.listViewServices);
+
+        requestQueue = Volley.newRequestQueue(Service.this);
+        if (isNetworkAvailable()) {
+            bookings();
+        }
+        else {
+            Toast.makeText(Service.this,"Internet not connected. Please connect to internet and try again.",Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void bookings()
+    {
+        JSONObject params = new JSONObject();
+        try {
+            params.put("email", loadData());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, serviceshow_url,params, new Response.Listener<JSONObject>() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onResponse(JSONObject response) {
+                try
+                {
+                    JSONArray detail=response.getJSONArray("info");
+
+                    String[] servname,servdur;
+
+                    if(detail.length()>0) {
+
+                        servname = new String[detail.length()];
+                        servdur = new String[detail.length()];
+
+                        for (int i = 0; i < detail.length(); i++) {
+                            JSONObject singledetail = detail.getJSONObject(i);
+                            servname[i] = singledetail.getString("service");
+                            servdur[i] = singledetail.getString("duration");
+
+                        }
+                    }
+                    else {
+                        servname = new String[1];
+                        servdur = new String[1];
+
+                        servname[0] = "No Service Added";
+                        servdur[0] = "";
+                    }
+
+                    Single_Service adapter = new Single_Service(Service.this,servname,servdur);
+                    listView.setAdapter(adapter);
+
+                }
+                catch (JSONException e)
+                {
+                    Toast.makeText(Service.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(Service.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> headers = new HashMap<>();
+                headers.put("Content-Type", "application/json; charset=utf-8");
+                return headers;
+            }
+        };
+        requestQueue.add(jsonObjectRequest);
+    }
+
+    public boolean isNetworkAvailable() {
+        ConnectivityManager cm = (ConnectivityManager)getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+        return networkInfo != null && networkInfo.isConnected();
+    }
+
+    protected String loadData() {
+        String FILENAME = "emailshop.txt";
+        String out = "";
+        try {
+            FileInputStream fis1 = getApplication().openFileInput(FILENAME);
+            BufferedReader br1 = new BufferedReader(new InputStreamReader(fis1));
+            String sLine1;
+            while (((sLine1 = br1.readLine()) != null)) {
+                out += sLine1;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return out;
     }
 
     @Override

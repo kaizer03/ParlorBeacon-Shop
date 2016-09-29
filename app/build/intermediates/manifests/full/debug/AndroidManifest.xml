@@ -86,9 +86,10 @@
         <activity android:name="com.springboardtechsolutions.parlorbeaconshop.Reset_Password" />
         <activity android:name="com.springboardtechsolutions.parlorbeaconshop.RegistrationVerification" />
         <activity
-            android:name="com.springboardsolution.parlorbeacon.Service"
+            android:name="com.springboardtechsolutions.parlorbeaconshop.Service"
             android:label="@string/title_activity_service"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.springboardtechsolutions.parlorbeaconshop.AddServices" />
     </application>
 
 </manifest>

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
-        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
-    },
-    {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/npi.jpg",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/npi.jpg"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/splashscreen.png",
@@ -36,12 +36,12 @@
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
-        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_internal_bg.xml"
-    },
-    {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
@@ -60,12 +60,12 @@
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/nfi.png",
-        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/nfi.png"
-    },
-    {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/login_button.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/login_button.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/nfi.png",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/nfi.png"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/fab_image.png",
@@ -98,6 +98,10 @@
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/bg1.png",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/bg1.png"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
@@ -138,6 +142,10 @@
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/bg2.png",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/bg2.png"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",

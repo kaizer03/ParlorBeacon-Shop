@@ -80,9 +80,10 @@
         <activity android:name=".Reset_Password" />
         <activity android:name=".RegistrationVerification" />
         <activity
-            android:name="com.springboardsolution.parlorbeacon.Service"
+            android:name=".Service"
             android:label="@string/title_activity_service"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddServices"></activity>
     </application>
 
 </manifest>

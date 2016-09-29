@@ -8,9 +8,9 @@ import butterknife.ButterKnife.ViewBinder;
 public class Forgot$$ViewBinder<T extends com.springboardtechsolutions.parlorbeaconshop.Forgot> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131492990, "field 'emailtext'");
-    target.emailtext = finder.castView(view, 2131492990, "field 'emailtext'");
-    view = finder.findRequiredView(source, 2131492991, "method 'onClick1'");
+    view = finder.findRequiredView(source, 2131492996, "field 'emailtext'");
+    target.emailtext = finder.castView(view, 2131492996, "field 'emailtext'");
+    view = finder.findRequiredView(source, 2131492997, "method 'onClick1'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
