@@ -1,5 +1,6 @@
 package com.springboardtechsolutions.parlorbeaconshop;
 
+import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +16,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -117,6 +119,7 @@ public class SignUpShop extends AppCompatActivity {
 
     public void onClick3(View view)
     {
+
         final String shopkeepername = shopkeepernametext.getText().toString();
         final String shopname = shopnametext.getText().toString();
         final String shopemail = emailtext.getText().toString();
@@ -150,11 +153,14 @@ public class SignUpShop extends AppCompatActivity {
                 }
                 else
                 {
+                    final ProgressDialog progressDialog = ProgressDialog.show(SignUpShop.this,"Signing Up","Please Wait",true,true);
                     StringRequest stringRequest = new StringRequest(Request.Method.POST, signup_url, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
+                            progressDialog.dismiss();
                             try {
-                                if (response.equalsIgnoreCase(String.valueOf(4))) {
+
+                                if (response.equalsIgnoreCase(String.valueOf(0))) {
                                     saveEmailShop(emailtext.getText().toString());
                                     savenameShop(shopkeepernametext.getText().toString());
                                     startActivity(new Intent(SignUpShop.this,RegistrationVerification.class));
@@ -165,13 +171,14 @@ public class SignUpShop extends AppCompatActivity {
                                     Toast.makeText(SignUpShop.this, "Something missing", Toast.LENGTH_SHORT).show();
                                 }
                             } catch (Exception e) {
-                                Toast.makeText(SignUpShop.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignUpShop.this, "Error1", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
-                            Toast.makeText(SignUpShop.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                            progressDialog.dismiss();
+                            Toast.makeText(SignUpShop.this, "Error", Toast.LENGTH_SHORT).show();
                         }
                     }) {
                         @Override
@@ -190,6 +197,8 @@ public class SignUpShop extends AppCompatActivity {
                             return parameters;
                         }
                     };
+
+                    stringRequest.setRetryPolicy(new DefaultRetryPolicy(50000,DefaultRetryPolicy.DEFAULT_MAX_RETRIES,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
                     requestQueue.add(stringRequest);
                 }
             }

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Sep 30 01:24:22 IST 2016
+#Fri Sep 30 01:54:50 IST 2016
 210.set=ANDROID_RESOURCE
 282.file=/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/resources-debug.ap_/res/layout-v17/abc_alert_dialog_material.xml
 14.set=DEX

@@ -4,33 +4,40 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="11481193353906"
+    timestamp="13610967622022"
     token="7872339960051275298"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="910" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="652" />
+        duration="0" />
     <task
         name="verifier"
-        duration="91" />
+        duration="0" />
 
     <artifact
-        location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="11481193353906"
+        timestamp="13313321415484"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="13610967622022"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
