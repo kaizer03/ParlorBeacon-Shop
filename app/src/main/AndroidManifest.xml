@@ -29,7 +29,7 @@
         <activity
             android:name=".LoginShop"
             android:label="Login"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SignUpShop"
             android:label="Sign Up" />
@@ -78,7 +78,11 @@
             android:label="@string/title_activity_contact_us"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Reset_Password" />
-        <activity android:name=".RegistrationVerification"></activity>
+        <activity android:name=".RegistrationVerification" />
+        <activity
+            android:name="com.springboardsolution.parlorbeacon.Service"
+            android:label="@string/title_activity_service"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
