@@ -4,26 +4,26 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="13610967622022"
+    timestamp="14687237334188"
     token="7872339960051275298"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="422" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="497" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="26" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
-        location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         timestamp="13313321415484"
@@ -38,6 +38,27 @@
         <artifact
             location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
             type="RESOURCES" />
+    </build>
+    <build
+        timestamp="14619664668263"
+        verifier="CLASS_ADDED" >
+        <artifact
+            location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="14662045405605"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/builds/debug/14662045405605/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="14687237334188"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
