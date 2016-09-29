@@ -221,17 +221,19 @@ public class Booking_Shop extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.mybookshop) {
-            startActivity(new Intent(Booking_Shop.this,Booking_Shop.class));
+            startActivity(new Intent(this,Booking_Shop.class));
+        } else if (id == R.id.Services) {
+            startActivity(new Intent(this,Service.class));
         } else if (id == R.id.myshop) {
-            startActivity(new Intent(Booking_Shop.this,MyShop.class));
+            startActivity(new Intent(this,MyShop.class));
         } else if (id == R.id.myemployeeshop) {
-            startActivity(new Intent(Booking_Shop.this,Employee_Shop.class));
+            startActivity(new Intent(this,Employee_Shop.class));
         } else if (id == R.id.shopdetail) {
-            startActivity(new Intent(Booking_Shop.this,Detail_Shop.class));
+            startActivity(new Intent(this,Detail_Shop.class));
         } else if (id == R.id.aboutus) {
-            startActivity(new Intent(Booking_Shop.this,About_Us.class));
+            startActivity(new Intent(this,About_Us.class));
         } else if (id == R.id.contactus) {
-            startActivity(new Intent(Booking_Shop.this,ContactUs.class));
+            startActivity(new Intent(this,ContactUs.class));
         }
 
         finish();

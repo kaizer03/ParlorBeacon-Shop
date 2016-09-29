@@ -203,19 +203,20 @@ public class Employee_Shop extends AppCompatActivity implements NavigationView.O
         int id = item.getItemId();
 
         if (id == R.id.mybookshop) {
-            startActivity(new Intent(Employee_Shop.this,Booking_Shop.class));
+            startActivity(new Intent(this,Booking_Shop.class));
+        } else if (id == R.id.Services) {
+            startActivity(new Intent(this,Service.class));
         } else if (id == R.id.myshop) {
-            startActivity(new Intent(Employee_Shop.this,MyShop.class));
+            startActivity(new Intent(this,MyShop.class));
         } else if (id == R.id.myemployeeshop) {
-            startActivity(new Intent(Employee_Shop.this, Employee_Shop.class));
-        }else if(id == R.id.shopdetail) {
-            startActivity(new Intent(Employee_Shop.this, Detail_Shop.class));
+            startActivity(new Intent(this,Employee_Shop.class));
+        } else if (id == R.id.shopdetail) {
+            startActivity(new Intent(this,Detail_Shop.class));
         } else if (id == R.id.aboutus) {
-            startActivity(new Intent(Employee_Shop.this,About_Us.class));
+            startActivity(new Intent(this,About_Us.class));
         } else if (id == R.id.contactus) {
-            startActivity(new Intent(Employee_Shop.this,ContactUs.class));
+            startActivity(new Intent(this,ContactUs.class));
         }
-
         finish();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

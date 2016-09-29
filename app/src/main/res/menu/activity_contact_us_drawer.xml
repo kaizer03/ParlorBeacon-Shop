@@ -11,6 +11,9 @@
         <item
             android:id="@+id/myemployeeshop"
             android:title="My Employees" />
+        <item
+            android:id="@+id/Services"
+            android:title="Services"/>
 
         <item
             android:id="@+id/shopdetail"

@@ -96,6 +96,8 @@ public class About_Us extends AppCompatActivity
 
         if (id == R.id.mybookshop) {
             startActivity(new Intent(About_Us.this,Booking_Shop.class));
+        } else if (id == R.id.Services) {
+            startActivity(new Intent(About_Us.this,Service.class));
         } else if (id == R.id.myshop) {
             startActivity(new Intent(About_Us.this,MyShop.class));
         } else if (id == R.id.myemployeeshop) {

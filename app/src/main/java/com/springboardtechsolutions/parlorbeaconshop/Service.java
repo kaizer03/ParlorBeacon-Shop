@@ -1,5 +1,6 @@
 package com.springboardtechsolutions.parlorbeaconshop;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.io.File;
 
 
 public class Service extends AppCompatActivity
@@ -68,10 +71,20 @@ public class Service extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.uf) {
+            startActivity(new Intent(this,UpcomingFeatures.class));
             return true;
+        }else if(id==R.id.logout){
+            File dir = getFilesDir();
+            File file = new File(dir, "shopownername.txt");
+            file.delete();
+            File file1 = new File(dir, "emailshop.txt");
+            file1.delete();
+            Intent p=new Intent(this,LoginShop.class);
+            startActivity(p);
         }
 
+        finish();
         return super.onOptionsItemSelected(item);
     }
 
@@ -81,19 +94,22 @@ public class Service extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.mybookshop) {
+            startActivity(new Intent(this,Booking_Shop.class));
+        } else if (id == R.id.Services) {
+            startActivity(new Intent(this,Service.class));
+        } else if (id == R.id.myshop) {
+            startActivity(new Intent(this,MyShop.class));
+        } else if (id == R.id.myemployeeshop) {
+            startActivity(new Intent(this,Employee_Shop.class));
+        } else if (id == R.id.shopdetail) {
+            startActivity(new Intent(this,Detail_Shop.class));
+        } else if (id == R.id.aboutus) {
+            startActivity(new Intent(this,About_Us.class));
+        } else if (id == R.id.contactus) {
+            startActivity(new Intent(this,ContactUs.class));
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

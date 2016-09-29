@@ -52,7 +52,15 @@
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/about__us.xml"
     },
     {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/service.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/service.xml"
+    },
+    {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/booking__shop.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/booking__shop.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/menu/activity_service_drawer.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/menu/activity_service_drawer.xml"
     }
 ]

@@ -1,15 +1,15 @@
 [
     {
-        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/splashscreen.png",
-        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/splashscreen.png"
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/npi.jpg",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/npi.jpg"
     },
     {
-        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
-        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/splashscreen.png",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/splashscreen.png"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
@@ -66,6 +66,10 @@
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/login_button.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/login_button.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/fab_image.png",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/drawable/fab_image.png"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/drawable/profile.png",

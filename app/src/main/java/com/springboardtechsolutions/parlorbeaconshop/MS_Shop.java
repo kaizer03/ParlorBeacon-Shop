@@ -221,17 +221,19 @@ public class MS_Shop extends AppCompatActivity implements NavigationView.OnNavig
         int id = item.getItemId();
 
         if (id == R.id.mybookshop) {
-            startActivity(new Intent(MS_Shop.this,Booking_Shop.class));
+            startActivity(new Intent(this,Booking_Shop.class));
+        } else if (id == R.id.Services) {
+            startActivity(new Intent(this,Service.class));
         } else if (id == R.id.myshop) {
-            startActivity(new Intent(MS_Shop.this,MyShop.class));
+            startActivity(new Intent(this,MyShop.class));
         } else if (id == R.id.myemployeeshop) {
-            startActivity(new Intent(MS_Shop.this,Employee_Shop.class));
+            startActivity(new Intent(this,Employee_Shop.class));
         } else if (id == R.id.shopdetail) {
-            startActivity(new Intent(MS_Shop.this,Detail_Shop.class));
+            startActivity(new Intent(this,Detail_Shop.class));
         } else if (id == R.id.aboutus) {
-            startActivity(new Intent(MS_Shop.this,About_Us.class));
+            startActivity(new Intent(this,About_Us.class));
         } else if (id == R.id.contactus) {
-            startActivity(new Intent(MS_Shop.this,ContactUs.class));
+            startActivity(new Intent(this,ContactUs.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
