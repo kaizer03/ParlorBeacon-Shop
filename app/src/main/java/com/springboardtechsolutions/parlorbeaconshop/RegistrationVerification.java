@@ -46,10 +46,20 @@ public class RegistrationVerification extends AppCompatActivity {
         setContentView(R.layout.activity_registration_verification);
         ButterKnife.bind(this);
 
-        new AchievementUnlocked(RegistrationVerification.this).setTitle("OTP has been sent").setSubTitle("Please check your email id.").setSubtitleColor(0x80000000).setIcon(getDrawableFromRes(R.drawable.chat)).isRounded(false).setDuration(2500).isLarge(true).build().show();
         AchievementUnlocked toast = new AchievementUnlocked(RegistrationVerification.this).setTitle("Account Created").setBackgroundColor(Color.parseColor("#333333")).setTitleColor(0xffffffff).setIcon(getDrawableFromRes(R.drawable.tick)).setDuration(1000).alignTop(false).isLarge(false).build();
         toast.show();
-
+        Thread startTimer = new Thread(){
+            public void run(){
+                try{
+                    sleep(1500);
+                    new AchievementUnlocked(RegistrationVerification.this).setTitle("OTP has been sent").setSubTitle("Please check your email id.").setSubtitleColor(0x80000000).setIcon(getDrawableFromRes(R.drawable.chat)).isRounded(false).setDuration(2500).isLarge(true).build().show();
+                }catch(InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+        };
+        startTimer.start();
         requestQueue = Volley.newRequestQueue(this);
 
     }
