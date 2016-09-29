@@ -8,29 +8,29 @@ import butterknife.ButterKnife.ViewBinder;
 public class Detail_Shop$$ViewBinder<T extends com.springboardtechsolutions.parlorbeaconshop.Detail_Shop> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131493054, "field 'profilepic'");
-    target.profilepic = finder.castView(view, 2131493054, "field 'profilepic'");
-    view = finder.findRequiredView(source, 2131493055, "field 'frontpic'");
-    target.frontpic = finder.castView(view, 2131493055, "field 'frontpic'");
-    view = finder.findRequiredView(source, 2131493057, "field 'shopkeepernametext'");
-    target.shopkeepernametext = finder.castView(view, 2131493057, "field 'shopkeepernametext'");
-    view = finder.findRequiredView(source, 2131493058, "field 'shopnametext'");
-    target.shopnametext = finder.castView(view, 2131493058, "field 'shopnametext'");
-    view = finder.findRequiredView(source, 2131493059, "field 'emailtext'");
-    target.emailtext = finder.castView(view, 2131493059, "field 'emailtext'");
-    view = finder.findRequiredView(source, 2131493060, "field 'shopphonetext'");
-    target.shopphonetext = finder.castView(view, 2131493060, "field 'shopphonetext'");
-    view = finder.findRequiredView(source, 2131493061, "field 'shopaddrtext'");
-    target.shopaddrtext = finder.castView(view, 2131493061, "field 'shopaddrtext'");
-    view = finder.findRequiredView(source, 2131493062, "field 'shopcitytext'");
-    target.shopcitytext = finder.castView(view, 2131493062, "field 'shopcitytext'");
-    view = finder.findRequiredView(source, 2131493063, "field 'shopziptext'");
-    target.shopziptext = finder.castView(view, 2131493063, "field 'shopziptext'");
-    view = finder.findRequiredView(source, 2131493064, "field 'shopopentext'");
-    target.shopopentext = finder.castView(view, 2131493064, "field 'shopopentext'");
-    view = finder.findRequiredView(source, 2131493065, "field 'shopclosetext'");
-    target.shopclosetext = finder.castView(view, 2131493065, "field 'shopclosetext'");
-    view = finder.findRequiredView(source, 2131493056, "method 'onClick'");
+    view = finder.findRequiredView(source, 2131493055, "field 'profilepic'");
+    target.profilepic = finder.castView(view, 2131493055, "field 'profilepic'");
+    view = finder.findRequiredView(source, 2131493056, "field 'frontpic'");
+    target.frontpic = finder.castView(view, 2131493056, "field 'frontpic'");
+    view = finder.findRequiredView(source, 2131493058, "field 'shopkeepernametext'");
+    target.shopkeepernametext = finder.castView(view, 2131493058, "field 'shopkeepernametext'");
+    view = finder.findRequiredView(source, 2131493059, "field 'shopnametext'");
+    target.shopnametext = finder.castView(view, 2131493059, "field 'shopnametext'");
+    view = finder.findRequiredView(source, 2131493060, "field 'emailtext'");
+    target.emailtext = finder.castView(view, 2131493060, "field 'emailtext'");
+    view = finder.findRequiredView(source, 2131493061, "field 'shopphonetext'");
+    target.shopphonetext = finder.castView(view, 2131493061, "field 'shopphonetext'");
+    view = finder.findRequiredView(source, 2131493062, "field 'shopaddrtext'");
+    target.shopaddrtext = finder.castView(view, 2131493062, "field 'shopaddrtext'");
+    view = finder.findRequiredView(source, 2131493063, "field 'shopcitytext'");
+    target.shopcitytext = finder.castView(view, 2131493063, "field 'shopcitytext'");
+    view = finder.findRequiredView(source, 2131493064, "field 'shopziptext'");
+    target.shopziptext = finder.castView(view, 2131493064, "field 'shopziptext'");
+    view = finder.findRequiredView(source, 2131493065, "field 'shopopentext'");
+    target.shopopentext = finder.castView(view, 2131493065, "field 'shopopentext'");
+    view = finder.findRequiredView(source, 2131493066, "field 'shopclosetext'");
+    target.shopclosetext = finder.castView(view, 2131493066, "field 'shopclosetext'");
+    view = finder.findRequiredView(source, 2131493057, "method 'onClick'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

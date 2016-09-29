@@ -43,7 +43,7 @@ public class AddServices extends AppCompatActivity {
     
     public void AddServiceOnClick(View view)
     {
-        final ProgressDialog progressDialog = ProgressDialog.show(AddServices.this,"Updating","Please Wait",true,true);
+        final ProgressDialog progressDialog = ProgressDialog.show(AddServices.this,"Adding Service","Please Wait",true,true);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, service_url, new Response.Listener<String>() {
             @Override
@@ -52,7 +52,7 @@ public class AddServices extends AppCompatActivity {
                 try {
                     if (response.equalsIgnoreCase("Success")) {
                         Toast.makeText(AddServices.this,"Successfully Updated", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(AddServices.this,Detail_Shop.class));
+                        startActivity(new Intent(AddServices.this,Service.class));
                         finish();
                     } else if (response.equalsIgnoreCase("Failed")) {
                         Toast.makeText(AddServices.this, "Sorry Details cannot be updated ", Toast.LENGTH_SHORT).show();

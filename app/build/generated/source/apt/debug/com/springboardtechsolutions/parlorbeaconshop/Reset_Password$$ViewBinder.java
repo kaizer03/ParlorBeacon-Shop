@@ -8,10 +8,10 @@ import butterknife.ButterKnife.ViewBinder;
 public class Reset_Password$$ViewBinder<T extends com.springboardtechsolutions.parlorbeaconshop.Reset_Password> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131493012, "field 'pass1'");
-    target.pass1 = finder.castView(view, 2131493012, "field 'pass1'");
-    view = finder.findRequiredView(source, 2131493013, "field 'pass2'");
-    target.pass2 = finder.castView(view, 2131493013, "field 'pass2'");
+    view = finder.findRequiredView(source, 2131493013, "field 'pass1'");
+    target.pass1 = finder.castView(view, 2131493013, "field 'pass1'");
+    view = finder.findRequiredView(source, 2131493014, "field 'pass2'");
+    target.pass2 = finder.castView(view, 2131493014, "field 'pass2'");
   }
 
   @Override public void unbind(T target) {

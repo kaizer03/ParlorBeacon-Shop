@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class SinglePicture$$ViewBinder<T extends com.springboardtechsolutions.parlorbeaconshop.SinglePicture> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131493105, "field 'singleimage'");
-    target.singleimage = finder.castView(view, 2131493105, "field 'singleimage'");
+    view = finder.findRequiredView(source, 2131493106, "field 'singleimage'");
+    target.singleimage = finder.castView(view, 2131493106, "field 'singleimage'");
   }
 
   @Override public void unbind(T target) {

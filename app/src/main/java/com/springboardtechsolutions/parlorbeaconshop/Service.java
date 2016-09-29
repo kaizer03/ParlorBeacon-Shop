@@ -1,6 +1,7 @@
 package com.springboardtechsolutions.parlorbeaconshop;
 
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -84,6 +85,7 @@ public class Service extends AppCompatActivity
 
     public void bookings()
     {
+        final ProgressDialog progressDialog = ProgressDialog.show(Service.this,"Loading Services","Please Wait",true,true);
         JSONObject params = new JSONObject();
         try {
             params.put("email", loadData());
@@ -95,6 +97,7 @@ public class Service extends AppCompatActivity
             @SuppressLint("SetTextI18n")
             @Override
             public void onResponse(JSONObject response) {
+                progressDialog.dismiss();
                 try
                 {
                     JSONArray detail=response.getJSONArray("info");
@@ -134,11 +137,13 @@ public class Service extends AppCompatActivity
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                progressDialog.dismiss();
                 Toast.makeText(Service.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
+                progressDialog.dismiss();
                 Map<String, String> headers = new HashMap<>();
                 headers.put("Content-Type", "application/json; charset=utf-8");
                 return headers;
