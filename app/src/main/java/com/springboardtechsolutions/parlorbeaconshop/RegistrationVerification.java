@@ -3,8 +3,11 @@ package com.springboardtechsolutions.parlorbeaconshop;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,13 +25,13 @@ import com.android.volley.toolbox.Volley;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import me.arulnadhan.AchievementUnlockedLib.AchievementUnlocked;
 
 public class RegistrationVerification extends AppCompatActivity {
 
@@ -42,6 +45,10 @@ public class RegistrationVerification extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_verification);
         ButterKnife.bind(this);
+
+        new AchievementUnlocked(RegistrationVerification.this).setTitle("OTP has been sent").setSubTitle("Please check your email id.").setSubtitleColor(0x80000000).setIcon(getDrawableFromRes(R.drawable.chat)).isRounded(false).setDuration(2500).isLarge(true).build().show();
+        AchievementUnlocked toast = new AchievementUnlocked(RegistrationVerification.this).setTitle("Account Created").setBackgroundColor(Color.parseColor("#333333")).setTitleColor(0xffffffff).setIcon(getDrawableFromRes(R.drawable.tick)).setDuration(1000).alignTop(false).isLarge(false).build();
+        toast.show();
 
         requestQueue = Volley.newRequestQueue(this);
 
@@ -113,6 +120,11 @@ public class RegistrationVerification extends AppCompatActivity {
             e.printStackTrace();
         }
         return out;
+    }
+
+    private Drawable getDrawableFromRes(int ResID) {
+        if (Build.VERSION.SDK_INT >= 21) getDrawable(ResID);
+        return getResources().getDrawable((ResID));
     }
 
 }

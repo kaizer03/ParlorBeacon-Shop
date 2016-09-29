@@ -3,6 +3,9 @@ package com.springboardtechsolutions.parlorbeaconshop;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -26,6 +29,8 @@ import java.io.InputStreamReader;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
+
+import me.arulnadhan.AchievementUnlockedLib.AchievementUnlocked;
 
 public class SignUpShop extends AppCompatActivity {
 
@@ -152,7 +157,6 @@ public class SignUpShop extends AppCompatActivity {
                                 if (response.equalsIgnoreCase(String.valueOf(4))) {
                                     saveEmailShop(emailtext.getText().toString());
                                     savenameShop(shopkeepernametext.getText().toString());
-                                    Toast.makeText(SignUpShop.this, "Successfully Registered. Please wait for the admin to accept your Request.", Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(SignUpShop.this,RegistrationVerification.class));
                                     finish();
                                 } else if (response.equalsIgnoreCase(String.valueOf(1))) {
@@ -231,5 +235,4 @@ public class SignUpShop extends AppCompatActivity {
         }
         return out;
     }
-
 }

@@ -1,4 +1,4 @@
-#Fri Sep 30 00:55:56 IST 2016
+#Fri Sep 30 01:24:21 IST 2016
 base.0=/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7f0a754c8bb85fd181fb70e06e1df5ed2ff7d147
 renamed.1=classes.dex
 renamed.0=classes2.dex
