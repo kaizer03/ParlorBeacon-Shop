@@ -19,12 +19,10 @@
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
             android:text="Service : "
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_height="wrap_content" />
 
         <EditText
+            android:inputType="textAutoCorrect"
             android:id="@+id/ServiceNameAdd"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -43,10 +41,7 @@
             android:text="Duration : "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView4"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:id="@+id/textView4" />
 
         <EditText
             android:id="@+id/ServiceDurAdd"
@@ -55,5 +50,14 @@
             android:layout_weight="4"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/ServiceAddButton"
+        android:text="ADD"
+        android:layout_below="@id/LL2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="AddServiceOnClick"/>
 
 </RelativeLayout>
