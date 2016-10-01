@@ -4,61 +4,33 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="14687237334188"
+    timestamp="79733489106679"
     token="7872339960051275298"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="422" />
+        duration="4566" />
     <task
         name="instant-run-dex"
-        duration="497" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="26" />
+        duration="425" />
     <task
         name="verifier"
-        duration="1" />
+        duration="115" />
 
     <artifact
-        location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="13313321415484"
+        timestamp="79733489106679"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="13610967622022"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
-    <build
-        timestamp="14619664668263"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="14662045405605"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/builds/debug/14662045405605/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="14687237334188"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

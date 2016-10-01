@@ -4,9 +4,6 @@ import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -32,7 +29,6 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
-import me.arulnadhan.AchievementUnlockedLib.AchievementUnlocked;
 
 public class SignUpShop extends AppCompatActivity {
 
@@ -119,89 +115,95 @@ public class SignUpShop extends AppCompatActivity {
 
     public void onClick3(View view)
     {
+        if(NoInternetToast.isNetworkAvailable(SignUpShop.this))
+        {
+            final String shopkeepername = shopkeepernametext.getText().toString();
+            final String shopname = shopnametext.getText().toString();
+            final String shopemail = emailtext.getText().toString();
+            final String shoppass = passtext.getText().toString();
+            final String shopphone = shopphonetext.getText().toString();
+            final String shopaddr = shopaddrtext.getText().toString();
+            final String shopcity = shopcitytext.getText().toString();
+            final String shopzip = shopziptext.getText().toString();
+            final String shopopen = shopopentext.getText().toString();
+            final String shopclose = shopclosetext.getText().toString();
 
-        final String shopkeepername = shopkeepernametext.getText().toString();
-        final String shopname = shopnametext.getText().toString();
-        final String shopemail = emailtext.getText().toString();
-        final String shoppass = passtext.getText().toString();
-        final String shopphone = shopphonetext.getText().toString();
-        final String shopaddr = shopaddrtext.getText().toString();
-        final String shopcity = shopcitytext.getText().toString();
-        final String shopzip = shopziptext.getText().toString();
-        final String shopopen = shopopentext.getText().toString();
-        final String shopclose = shopclosetext.getText().toString();
-
-        if(shopkeepername.equals("") || shopname.equals("") || shopemail.equals("") || shoppass.equals("") || shopphone.equals("") || shopaddr.equals("") || shopcity.equals("") || shopzip.equals("") || shopopen.equals("") || shopclose.equals(""))
-        {
-            Toast.makeText(SignUpShop.this,"Please enter all the Details", Toast.LENGTH_SHORT).show();
-        }
-        else if(!tc.isChecked())
-        {
-            Toast.makeText(SignUpShop.this,"Please agree with Terms and Conditions", Toast.LENGTH_SHORT).show();
-        }
-        else
-        {
-            if(!shopemail.contains("@") && !shopemail.contains(".com"))
+            if(shopkeepername.equals("") || shopname.equals("") || shopemail.equals("") || shoppass.equals("") || shopphone.equals("") || shopaddr.equals("") || shopcity.equals("") || shopzip.equals("") || shopopen.equals("") || shopclose.equals(""))
             {
-                Toast.makeText(SignUpShop.this,"Please enter a valid email address", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SignUpShop.this,"Please enter all the Details", Toast.LENGTH_SHORT).show();
+            }
+            else if(!tc.isChecked())
+            {
+                Toast.makeText(SignUpShop.this,"Please agree with Terms and Conditions", Toast.LENGTH_SHORT).show();
             }
             else
             {
-                if(!(shoppass.length()>8))
+                if(!shopemail.contains("@") && !shopemail.contains(".com"))
                 {
-                    Toast.makeText(SignUpShop.this,"Please Enter Password greater than 8 character", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpShop.this,"Please enter a valid email address", Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
-                    final ProgressDialog progressDialog = ProgressDialog.show(SignUpShop.this,"Signing Up","Please Wait",true,true);
-                    StringRequest stringRequest = new StringRequest(Request.Method.POST, signup_url, new Response.Listener<String>() {
-                        @Override
-                        public void onResponse(String response) {
-                            progressDialog.dismiss();
-                            try {
+                    if(!(shoppass.length()>8))
+                    {
+                        Toast.makeText(SignUpShop.this,"Please Enter Password greater than 8 character", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                    {
+                        final ProgressDialog progressDialog = ProgressDialog.show(SignUpShop.this,"Signing Up","Please Wait",true,true);
+                        StringRequest stringRequest = new StringRequest(Request.Method.POST, signup_url, new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                progressDialog.dismiss();
+                                try {
 
-                                if (response.equalsIgnoreCase(String.valueOf(0))) {
-                                    saveEmailShop(emailtext.getText().toString());
-                                    savenameShop(shopkeepernametext.getText().toString());
-                                    startActivity(new Intent(SignUpShop.this,RegistrationVerification.class));
-                                    finish();
-                                } else if (response.equalsIgnoreCase(String.valueOf(1))) {
-                                    Toast.makeText(SignUpShop.this, "Sorry You have Already Registered Yet", Toast.LENGTH_SHORT).show();
-                                } else if (response.equalsIgnoreCase(String.valueOf(2))) {
-                                    Toast.makeText(SignUpShop.this, "Something missing", Toast.LENGTH_SHORT).show();
+                                    if (response.equalsIgnoreCase(String.valueOf(0))) {
+                                        saveEmailShop(emailtext.getText().toString());
+                                        savenameShop(shopkeepernametext.getText().toString());
+                                        startActivity(new Intent(SignUpShop.this,RegistrationVerification.class));
+                                        finish();
+                                    } else if (response.equalsIgnoreCase(String.valueOf(1))) {
+                                        Toast.makeText(SignUpShop.this, "Sorry You have Already Registered Yet", Toast.LENGTH_SHORT).show();
+                                    } else if (response.equalsIgnoreCase(String.valueOf(2))) {
+                                        Toast.makeText(SignUpShop.this, "Something missing", Toast.LENGTH_SHORT).show();
+                                    }
+                                } catch (Exception e) {
+                                    Toast.makeText(SignUpShop.this, "Error1", Toast.LENGTH_SHORT).show();
                                 }
-                            } catch (Exception e) {
-                                Toast.makeText(SignUpShop.this, "Error1", Toast.LENGTH_SHORT).show();
                             }
-                        }
-                    }, new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                            progressDialog.dismiss();
-                            Toast.makeText(SignUpShop.this, "Error", Toast.LENGTH_SHORT).show();
-                        }
-                    }) {
-                        @Override
-                        protected Map<String, String> getParams() throws AuthFailureError {
-                            Map<String, String> parameters = new HashMap<>();
-                            parameters.put("shopkeepername",shopkeepername);
-                            parameters.put("shopname", shopname);
-                            parameters.put("email", shopemail);
-                            parameters.put("password", shoppass);
-                            parameters.put("shopaddress", shopaddr);
-                            parameters.put("phoneno", shopphone);
-                            parameters.put("starttime", shopopen);
-                            parameters.put("endtime", shopclose);
-                            parameters.put("city", shopcity);
-                            parameters.put("zipcode", shopzip);
-                            return parameters;
-                        }
-                    };
+                        }, new Response.ErrorListener() {
+                            @Override
+                            public void onErrorResponse(VolleyError error) {
+                                progressDialog.dismiss();
+                                Toast.makeText(SignUpShop.this, "Error", Toast.LENGTH_SHORT).show();
+                            }
+                        }) {
+                            @Override
+                            protected Map<String, String> getParams() throws AuthFailureError {
+                                Map<String, String> parameters = new HashMap<>();
+                                parameters.put("shopkeepername",shopkeepername);
+                                parameters.put("shopname", shopname);
+                                parameters.put("email", shopemail);
+                                parameters.put("password", shoppass);
+                                parameters.put("shopaddress", shopaddr);
+                                parameters.put("phoneno", shopphone);
+                                parameters.put("starttime", shopopen);
+                                parameters.put("endtime", shopclose);
+                                parameters.put("city", shopcity);
+                                parameters.put("zipcode", shopzip);
+                                return parameters;
+                            }
+                        };
 
-                    stringRequest.setRetryPolicy(new DefaultRetryPolicy(50000,DefaultRetryPolicy.DEFAULT_MAX_RETRIES,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-                    requestQueue.add(stringRequest);
+                        stringRequest.setRetryPolicy(new DefaultRetryPolicy(50000,DefaultRetryPolicy.DEFAULT_MAX_RETRIES,DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+                        requestQueue.add(stringRequest);
+                    }
                 }
             }
+        }
+        else
+        {
+            NoInternetToast.nointernettoast(SignUpShop.this);
         }
     }
 

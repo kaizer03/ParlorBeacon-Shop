@@ -72,7 +72,7 @@ public class RegistrationVerification extends AppCompatActivity {
 
         final ProgressDialog progressDialog = ProgressDialog.show(this,"Verifying...","Please wait...",false,false);
 
-        if (isNetworkAvailable()) {
+        if (NoInternetToast.isNetworkAvailable(RegistrationVerification.this)) {
             StringRequest stringRequest = new StringRequest(Request.Method.POST, register_confirm_url, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
@@ -108,14 +108,8 @@ public class RegistrationVerification extends AppCompatActivity {
             };
             requestQueue.add(stringRequest);
         } else {
-            Toast.makeText(RegistrationVerification.this, "Please Connect to internet and try again", Toast.LENGTH_SHORT).show();
+            NoInternetToast.nointernettoast(RegistrationVerification.this);
         }
-    }
-
-    public boolean isNetworkAvailable() {
-        ConnectivityManager cm = (ConnectivityManager)getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        return networkInfo != null && networkInfo.isConnected();
     }
 
     protected String loadData() {

@@ -1,16 +1,10 @@
 package com.springboardtechsolutions.parlorbeaconshop;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -38,7 +32,6 @@ import java.util.Map;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import me.arulnadhan.AchievementUnlockedLib.AchievementUnlocked;
 
 
 public class LoginShop extends AppCompatActivity {
@@ -89,7 +82,6 @@ public class LoginShop extends AppCompatActivity {
         Intent intent = new Intent(android.provider.Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
                 Uri.parse("package:" + getPackageName()));
         startActivityForResult(intent, 123);
-
     }
 
 
@@ -110,7 +102,7 @@ public class LoginShop extends AppCompatActivity {
     }
 
     public void LoginCheck(final String email, final String password) {
-        if (isNetworkAvailable()) {
+        if (NoInternetToast.isNetworkAvailable(LoginShop.this)) {
             final ProgressDialog loading = ProgressDialog.show(this,"Loading...","Please wait...",false,false);
 
             StringRequest stringRequest = new StringRequest(Request.Method.POST, login_url, new Response.Listener<String>() {
@@ -150,14 +142,8 @@ public class LoginShop extends AppCompatActivity {
             requestQueue.add(stringRequest);
 
         } else {
-            Toast.makeText(LoginShop.this, "Please connect to the internet", Toast.LENGTH_SHORT).show();
+            NoInternetToast.nointernettoast(LoginShop.this);
         }
-    }
-
-    public boolean isNetworkAvailable() {
-        ConnectivityManager cm = (ConnectivityManager)getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        return networkInfo != null && networkInfo.isConnected();
     }
 
     @OnClick(R.id.login_shop_signup)
@@ -222,7 +208,7 @@ public class LoginShop extends AppCompatActivity {
 
     public void savenameShop()
     {
-        if (isNetworkAvailable()) {
+        if (NoInternetToast.isNetworkAvailable(LoginShop.this)) {
             final ProgressDialog loading = ProgressDialog.show(this,"Loading...","Please wait...",false,false);
 
             StringRequest stringRequest = new StringRequest(Request.Method.POST, login_name_url, new Response.Listener<String>() {
