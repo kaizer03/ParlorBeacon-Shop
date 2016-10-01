@@ -4,19 +4,19 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="82305674357146"
+    timestamp="83169201618872"
     token="7872339960051275298"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="364" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="56" />
+        duration="0" />
     <task
         name="verifier"
         duration="0" />
@@ -26,14 +26,14 @@
         type="DEX" />
 
     <build
-        timestamp="82198379393058"
+        timestamp="82520248330117"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="82305674357146"
+        timestamp="83169201618872"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"

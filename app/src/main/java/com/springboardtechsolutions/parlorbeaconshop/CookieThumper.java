@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
@@ -112,7 +113,7 @@ public class CookieThumper extends AppCompatActivity {
                 .setPosition(me.arulnadhan.textsurface.contants.Align.BOTTOM_OF | me.arulnadhan.textsurface.contants.Align.CENTER_OF, textHaai).build();
 
         Text texThyLamInnie = TextBuilder
-                .create(" Template")
+                .create(" Application")
                 .setPaint(paint)
                 .setSize(44)
                 .setAlpha(0)
@@ -120,7 +121,7 @@ public class CookieThumper extends AppCompatActivity {
                 .setPosition(me.arulnadhan.textsurface.contants.Align.RIGHT_OF, textDaaiAnies).build();
 
         Text textThrowDamn = TextBuilder
-                .create("Android ")
+                .create("Parlor ")
                 .setPaint(paint)
                 .setSize(44)
                 .setAlpha(0)
@@ -128,7 +129,7 @@ public class CookieThumper extends AppCompatActivity {
                 .setPosition(me.arulnadhan.textsurface.contants.Align.BOTTOM_OF | me.arulnadhan.textsurface.contants.Align.CENTER_OF, texThyLamInnie).build();
 
         Text textDevilishGang = TextBuilder
-                .create("Ultimate...!")
+                .create("Beacon...!")
                 .setPaint(paint)
                 .setSize(44)
                 .setAlpha(0)
@@ -174,7 +175,18 @@ public class CookieThumper extends AppCompatActivity {
                 )
         );
 
-        startActivity(new Intent(CookieThumper.this,LoginShop.class));
+        new CountDownTimer(8000, 1000)
+        {
+            @Override
+            public void onFinish() {
+                startActivity(new Intent(CookieThumper.this,LoginShop.class));
+            }
+
+            @Override
+            public void onTick(long l) {
+
+            }
+        }.start();
 
     }
 
