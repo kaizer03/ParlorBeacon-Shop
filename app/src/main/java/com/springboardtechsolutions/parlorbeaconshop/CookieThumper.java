@@ -97,7 +97,7 @@ public class CookieThumper extends AppCompatActivity {
                 .setPosition(me.arulnadhan.textsurface.contants.Align.RIGHT_OF, textBraAnies).build();
 
         Text textHaai = TextBuilder
-                .create("the")
+                .create(" Parlor")
                 .setPaint(paint)
                 .setSize(74)
                 .setAlpha(0)
@@ -105,7 +105,7 @@ public class CookieThumper extends AppCompatActivity {
                 .setPosition(me.arulnadhan.textsurface.contants.Align.BOTTOM_OF, textFokkenGamBra).build();
 
         Text textDaaiAnies = TextBuilder
-                .create("Awesome")
+                .create(" Beacon")
                 .setPaint(paint)
                 .setSize(44)
                 .setAlpha(0)
@@ -113,23 +113,23 @@ public class CookieThumper extends AppCompatActivity {
                 .setPosition(me.arulnadhan.textsurface.contants.Align.BOTTOM_OF | me.arulnadhan.textsurface.contants.Align.CENTER_OF, textHaai).build();
 
         Text texThyLamInnie = TextBuilder
-                .create(" Application")
-                .setPaint(paint)
-                .setSize(44)
-                .setAlpha(0)
-                .setColor(Color.WHITE)
-                .setPosition(me.arulnadhan.textsurface.contants.Align.RIGHT_OF, textDaaiAnies).build();
-
-        Text textThrowDamn = TextBuilder
-                .create("Parlor ")
+                .create(" your")
                 .setPaint(paint)
                 .setSize(44)
                 .setAlpha(0)
                 .setColor(Color.RED)
+                .setPosition(me.arulnadhan.textsurface.contants.Align.RIGHT_OF, textDaaiAnies).build();
+
+        Text textThrowDamn = TextBuilder
+                .create("World ")
+                .setPaint(paint)
+                .setSize(44)
+                .setAlpha(0)
+                .setColor(Color.WHITE)
                 .setPosition(me.arulnadhan.textsurface.contants.Align.BOTTOM_OF | me.arulnadhan.textsurface.contants.Align.CENTER_OF, texThyLamInnie).build();
 
         Text textDevilishGang = TextBuilder
-                .create("Beacon...!")
+                .create("of ")
                 .setPaint(paint)
                 .setSize(44)
                 .setAlpha(0)
@@ -137,11 +137,11 @@ public class CookieThumper extends AppCompatActivity {
                 .setPosition(me.arulnadhan.textsurface.contants.Align.BOTTOM_OF | me.arulnadhan.textsurface.contants.Align.CENTER_OF, textThrowDamn).build();
 
         Text textSignsInTheAir = TextBuilder
-                .create(":)")
+                .create("Convenience")
                 .setPaint(paint)
                 .setSize(44)
                 .setAlpha(0)
-                .setColor(Color.RED)
+                .setColor(Color.WHITE)
                 .setPosition(me.arulnadhan.textsurface.contants.Align.BOTTOM_OF | me.arulnadhan.textsurface.contants.Align.CENTER_OF, textDevilishGang).build();
 
         textSurface.play(
