@@ -50,6 +50,11 @@ public class LoginShop extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_shop);
 
+        if(!NoInternetToast.isNetworkAvailable(LoginShop.this))
+        {
+            NoInternetToast.nointernettoast(LoginShop.this);
+        }
+
         if (Build.VERSION.SDK_INT >= 23) {
 
             if (!Settings.canDrawOverlays(getApplicationContext()))

@@ -26,7 +26,7 @@ public class NoInternetToast {
         }
 
         final AchievementUnlocked toastCool =
-                new AchievementUnlocked(activity).isRounded(rounded).setBackgroundColor(bg).isPersistent(true).setTitle("Message is about to be sent").setSubTitle("Tap to cancel, or wait 3 sec until it's sent ").setIcon(getDrawableFromRes(R.drawable.delete,activity)).isPersistent(true).build();
+                new AchievementUnlocked(activity).isRounded(rounded).setBackgroundColor(bg).isPersistent(true).setTitle("Internet not connected").setSubTitle("Tap to cancel").setIcon(getDrawableFromRes(R.drawable.delete,activity)).isPersistent(true).build();
 
 
         final View popUp = toastCool.getAchievementView();

@@ -31,4 +31,5 @@ dependencies {
     compile 'com.github.medyo:fancybuttons:1.5@aar'
 
     compile project(":Achievement")
+    compile project(":TextSurface")
 }

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Oct 01 19:51:08 IST 2016
+#Sat Oct 01 20:00:59 IST 2016
 210.set=ANDROID_RESOURCE
 282.file=/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/resources-debug.ap_/res/menu/activity_booking__shop_drawer.xml
 14.set=DEX

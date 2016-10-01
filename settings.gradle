@@ -1,1 +1,1 @@
-include ':app', ':Achievement'
+include ':app', ':Achievement', ':TextSurface'

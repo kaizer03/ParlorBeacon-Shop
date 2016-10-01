@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="c22d87ab38aeacabcb2a36319ceb7ed0e353a464">
+        sha1="281f3fac1e96db31c0e0587b5076e04443cb2cc1">
         <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7f0a754c8bb85fd181fb70e06e1df5ed2ff7d147/classes.dex" />
     </item>
     <item
@@ -34,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="af2dc63a9923a78274aa68391ea1359a8468f0d1">
+        sha1="5ed44628123c9959bf16f6de5d8e1a31d19d5683">
         <dex dex="/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f140f3d874bdeab56350a81c6b4bba06f81f2fdc/classes.dex" />
     </item>
     <item
