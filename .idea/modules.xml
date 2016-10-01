@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/ParlorBeacon-Shop-master.iml" filepath="$PROJECT_DIR$/ParlorBeacon-Shop-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/TextSurface/TextSurface.iml" filepath="$PROJECT_DIR$/TextSurface/TextSurface.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/robototextview/robototextview.iml" filepath="$PROJECT_DIR$/robototextview/robototextview.iml" />
     </modules>
   </component>
 </project>

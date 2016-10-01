@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
             public void run(){
                 try{
                     sleep(2500);
-                    startActivity(new Intent(MainActivity.this,LoginShop.class));
+                    startActivity(new Intent(MainActivity.this,CookieThumper.class));
                     finish();
                 }catch(InterruptedException e)
                 {

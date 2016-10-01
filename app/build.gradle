@@ -32,4 +32,5 @@ dependencies {
 
     compile project(":Achievement")
     compile project(":TextSurface")
+    compile project(":robototextview")
 }

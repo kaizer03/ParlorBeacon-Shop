@@ -32,20 +32,20 @@
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/content_employee__shop.xml",
-        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/layout/content_employee__shop.xml"
-    },
-    {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_menu_item_action_area.xml"
     },
     {
-        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_action.xml"
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/content_employee__shop.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/layout/content_employee__shop.xml"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/achievement_layout.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/ParlorBeacon-Shop-master/Achievement/unspecified/res/layout/achievement_layout.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/activity_add_services.xml",
@@ -128,12 +128,12 @@
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/app_bar_ms__shop.xml",
-        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/layout/app_bar_ms__shop.xml"
-    },
-    {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/app_bar_ms__shop.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/layout/app_bar_ms__shop.xml"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/app_bar_service.xml",
@@ -172,12 +172,12 @@
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/layout/nav_header_booking__shop.xml"
     },
     {
-        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/app_bar_employee__shop.xml",
@@ -274,6 +274,10 @@
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
         "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/activity_textsurface.xml",
+        "source": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/src/main/res/layout/activity_textsurface.xml"
     },
     {
         "merged": "/Users/KAIZER/Downloads/ParlorBeacon-Shop-master/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",

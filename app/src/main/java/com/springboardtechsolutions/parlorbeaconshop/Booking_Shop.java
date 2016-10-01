@@ -1,10 +1,7 @@
 package com.springboardtechsolutions.parlorbeaconshop;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -66,11 +63,11 @@ public class Booking_Shop extends AppCompatActivity implements NavigationView.On
         listView = (ListView)findViewById(R.id.ListViewBookings);
 
         requestQueue = Volley.newRequestQueue(Booking_Shop.this);
-        if (isNetworkAvailable()) {
+        if (NoInternetToast.isNetworkAvailable(Booking_Shop.this)) {
             bookings();
         }
         else {
-            Toast.makeText(Booking_Shop.this,"Internet not connected. Please connect to internet and try again.",Toast.LENGTH_SHORT).show();
+            NoInternetToast.nointernettoast(this);
         }
     }
 
@@ -240,12 +237,6 @@ public class Booking_Shop extends AppCompatActivity implements NavigationView.On
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    public boolean isNetworkAvailable() {
-        ConnectivityManager cm = (ConnectivityManager)getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        return networkInfo != null && networkInfo.isConnected();
     }
 
     protected String loadData2() {

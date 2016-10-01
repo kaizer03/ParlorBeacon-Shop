@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <attr format="reference" name="drawerArrowStyle"/>
+    <attr name="fontFamily">
+        <enum name="roboto" value="0"/>
+        <enum name="roboto_condensed" value="1"/>
+        <enum name="roboto_slab" value="2"/>
+    </attr>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
+    <attr name="textStyle">
+        <enum name="normal" value="0"/>
+        <enum name="italic" value="1"/>
+    </attr>
+    <attr name="textWeight">
+        <enum name="normal" value="0"/>
+        <enum name="thin" value="1"/>
+        <enum name="light" value="2"/>
+        <enum name="medium" value="3"/>
+        <enum name="bold" value="4"/>
+        <enum name="ultra_bold" value="5"/>
+    </attr>
     <attr format="string" name="title"/>
+    <attr name="typeface">
+        <enum name="roboto_thin" value="0"/>
+        <enum name="roboto_thin_italic" value="1"/>
+        <enum name="roboto_light" value="2"/>
+        <enum name="roboto_light_italic" value="3"/>
+        <enum name="roboto_regular" value="4"/>
+        <enum name="roboto_italic" value="5"/>
+        <enum name="roboto_medium" value="6"/>
+        <enum name="roboto_medium_italic" value="7"/>
+        <enum name="roboto_bold" value="8"/>
+        <enum name="roboto_bold_italic" value="9"/>
+        <enum name="roboto_black" value="10"/>
+        <enum name="roboto_black_italic" value="11"/>
+        <enum name="roboto_condensed_light" value="12"/>
+        <enum name="roboto_condensed_light_italic" value="13"/>
+        <enum name="roboto_condensed_regular" value="14"/>
+        <enum name="roboto_condensed_italic" value="15"/>
+        <enum name="roboto_condensed_bold" value="16"/>
+        <enum name="roboto_condensed_bold_italic" value="17"/>
+        <enum name="roboto_slab_thin" value="18"/>
+        <enum name="roboto_slab_light" value="19"/>
+        <enum name="roboto_slab_regular" value="20"/>
+        <enum name="roboto_slab_bold" value="21"/>
+    </attr>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
     <bool name="abc_action_bar_expanded_action_views_exclusive">true</bool>
@@ -115,6 +156,21 @@
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/></declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
     <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
+    <declare-styleable name="RobotoAutoCompleteTextView"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoButton"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoCheckBox"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoCheckedTextView"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoChronometer"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoCompoundButton"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoDigitalClock"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoEditText"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoExtractEditText"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoMultiAutoCompleteTextView"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoRadioButton"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoSwitch"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoTextClock"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoTextView"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
+    <declare-styleable name="RobotoToggleButton"><attr name="typeface"/><attr name="fontFamily"/><attr name="textWeight"/><attr name="textStyle"/></declare-styleable>
     <declare-styleable name="ScrimInsetsFrameLayout"><attr format="color|reference" name="insetForeground"/></declare-styleable>
     <declare-styleable name="ScrollingViewBehavior_Params"><attr format="dimension" name="behavior_overlapTop"/></declare-styleable>
     <declare-styleable name="SearchView"><attr format="reference" name="layout"/><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr format="string" name="defaultQueryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/><attr format="reference" name="closeIcon"/><attr format="reference" name="goIcon"/><attr format="reference" name="searchIcon"/><attr format="reference" name="searchHintIcon"/><attr format="reference" name="voiceIcon"/><attr format="reference" name="commitIcon"/><attr format="reference" name="suggestionRowLayout"/><attr format="reference" name="queryBackground"/><attr format="reference" name="submitBackground"/><attr name="android:focusable"/></declare-styleable>

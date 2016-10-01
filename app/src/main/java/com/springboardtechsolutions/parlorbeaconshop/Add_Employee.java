@@ -1,10 +1,7 @@
 package com.springboardtechsolutions.parlorbeaconshop;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -69,7 +66,7 @@ public class Add_Employee extends AppCompatActivity {
     
     public void addemp(final String name, final String email, final String desig)
     {
-        if (isNetworkAvailable()) {
+        if (NoInternetToast.isNetworkAvailable(Add_Employee.this)) {
             final ProgressDialog progressDialog = new ProgressDialog(Add_Employee.this);
             progressDialog.setMessage("Please Wait Logging You In.");
             progressDialog.setIndeterminate(true);
@@ -114,14 +111,8 @@ public class Add_Employee extends AppCompatActivity {
             progressDialog.dismiss();
 
         } else {
-            Toast.makeText(Add_Employee.this, "Please connect to the internet", Toast.LENGTH_SHORT).show();
+            NoInternetToast.nointernettoast(Add_Employee.this);
         }
-    }
-
-    public boolean isNetworkAvailable() {
-        ConnectivityManager cm = (ConnectivityManager)getApplication().getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        return networkInfo != null && networkInfo.isConnected();
     }
 
     protected String loadData() {

@@ -90,6 +90,7 @@
             android:label="@string/title_activity_service"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.springboardtechsolutions.parlorbeaconshop.AddServices" />
+        <activity android:name="com.springboardtechsolutions.parlorbeaconshop.CookieThumper" />
     </application>
 
 </manifest>

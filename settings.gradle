@@ -1,1 +1,1 @@
-include ':app', ':Achievement', ':TextSurface'
+include ':app', ':Achievement', ':TextSurface', ':robototextview'

@@ -83,7 +83,8 @@
             android:name=".Service"
             android:label="@string/title_activity_service"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AddServices"></activity>
+        <activity android:name=".AddServices"/>
+        <activity android:name=".CookieThumper"/>
     </application>
 
 </manifest>
